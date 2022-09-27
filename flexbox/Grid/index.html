@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Grid Project</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.container {
+    display: grid;
+    grid-template-columns: 1fr, 150fr;
+    grid-template-rows: auto auto auto auto;
+
+   Grid-template-areas: 
+   "title title"
+    "menu sidebar"
+    "content sidebar"
+    "footer footer"
+  }
+  .container-title{
+    grid-area: title;
+    background-color: #069;
+    color: white;
+    text-align: center;
+
+
+  }
+  .container-menus{
+    grid-area: menu;
+    background-color: #069;
+    color: white;
+    
+  }
+  .container-menus-ul{
+     list-style-type: none;
+     display: flex;
+     justify-content: space-evenly;
+  }
+  .container-main{
+    grid-area: content;
+   
+  }
+    .container-sidebar{
+      grid-area: sidebar;
+    }
+   .container-footer{
+    grid-area: footer;
+   }
+  
+</style>
+<body>
+    <div class="container">
+
+        <div class="container-title">
+            Title
+        </div>
+
+        <div class="container-menus">
+            
+                    
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="container-main">
+        <h1> Header</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi rerum tempore ipsum, hic rem quas in obcaecati maiores soluta quae eligendi omnis aliquam. Rerum aut voluptatum odit quaerat sint totam modi, deserunt sit a inventore! Sit, minima dolores reprehenderit velit accusantium, nulla odit eius veritatis excepturi ab neque. Temporibus, recusandae.</p>
+        </div>
+        <div class="container-sidebar">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ut aperiam porro autem itaque distinctio. Labore laborum maiores totam architecto ut consequatur error fugit quasi in, porro commodi nemo quo veritatis odit ex tempore dolor non ducimus! Veritatis, nihil, modi aperiam molestiae ex quis minima, cumque ducimus totam temporibus nesciunt.</p>
+            </div>
+            <div class="container-footer">
+                     <p> Closing Notes</p>
+                
+                </div>
+</body>
+</html>
